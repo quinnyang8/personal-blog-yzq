@@ -1,0 +1,81 @@
+         * {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            height: 100vh;
+            width: 100vw;
+            background-color: aquamarine;
+        }
+
+        .loadbox {
+            width: 78px;
+            margin: 0 auto;
+            position: relative;
+            top: 45%;
+        }
+
+        .loadingico {
+
+            display: flex;
+            flex-wrap: wrap;
+               animation-name: loading;
+            animation-duration: 4s;
+            animation-iteration-count:infinite;
+            animation-timing-function:linear;
+
+        }
+
+        .loadingico span {
+            width: 32px;
+            height: 32px;
+            margin: 2px;
+         
+        }
+
+        @keyframes loading {
+            from {
+               transform: rotateZ(0deg);
+            }
+
+            to {
+             transform: rotateZ(360deg);
+
+            }
+        }
+
+        .loadingico span:nth-child(1) {
+
+            background-color: #1abc9c;
+            border-radius: 50% 50% 0 50%;
+        }
+
+        .loadingico span:nth-child(2) {
+            width: 32px;
+            height: 32px;
+            background-color: #f1c40f;
+            border-radius: 50% 50% 50% 0;
+        }
+
+        .loadingico span:nth-child(3) {
+            width: 32px;
+            height: 32px;
+            background-color: #e74c3c;
+            border-radius: 50% 0 50% 50%;
+        }
+
+        .loadingico span:nth-child(4) {
+            width: 32px;
+            height: 32px;
+            background-color: #3498db;
+            border-radius: 0 50% 50% 50%;
+        }
+
+        .isloading {
+            font-size: 14px;
+            width: 100%;
+            text-align: center;
+            line-height: 50px;
+            color: rgb(61, 61, 61)
+        }
